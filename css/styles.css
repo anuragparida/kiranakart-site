@@ -4,6 +4,16 @@
   --secondary-background: #ffffff;
 }
 
+@font-face {
+  font-family: Work Sans;
+  src: url(fonts/workR.ttf);
+}
+
+@font-face {
+  font-family: Galano Grotesque DEMO;
+  src: url(fonts/galano.otf);
+}
+
 body {
   margin: 0;
   overflow-x: hidden;
@@ -16,15 +26,14 @@ body {
 }
 
 nav {
-  /* background-color: var(--primary-background); */
   width: 100%;
   height: 10vh;
-  /* position: fixed; */
   position: absolute;
   display: flex;
   flex-direction: row;
   align-items: center;
   z-index: 100;
+  transition: all 0.2s;
 }
 
 .nav-logo {
