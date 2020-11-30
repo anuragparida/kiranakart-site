@@ -4,8 +4,10 @@
 
     if (scroll >= 200) {
       $(".ksticky").addClass("raised-container position-fixed");
+      $(".nav-logo").css("height", "inherit");
     } else {
       $(".ksticky").removeClass("raised-container position-fixed");
+      $(".nav-logo").css("height", "auto");
     }
   });
 

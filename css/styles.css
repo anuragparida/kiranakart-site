@@ -50,6 +50,11 @@ nav {
 
 .nav-link {
   display: inline-block;
+  font-weight: 400;
+}
+
+.nav-link-plain:hover {
+  text-decoration: underline;
 }
 
 .raised-container {
