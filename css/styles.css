@@ -2,6 +2,8 @@
   --primary-background: #eeeeee;
   --primary-foreground: #000000;
   --secondary-background: #ffffff;
+  --brand-light: #44ac14;
+  --brand-dark: #047c34;
 }
 
 @font-face {
@@ -64,22 +66,26 @@ nav {
   margin: 75px 0;
 }
 
-.kfeature-left {
+.kfeature-left,
+.ktest-left {
   left: 0;
   display: inline-block;
   margin-right: 5%;
 }
 
-.kfeature-right {
+.kfeature-right,
+.ktest-right {
   right: 0;
   display: inline-block;
 }
 
-.kfeature-image {
+.kfeature-image,
+.ktest-right {
   width: 40%;
 }
 
-.kfeature-image img {
+.kfeature-image img,
+.ktest-right img {
   width: 100%;
 }
 
@@ -91,7 +97,8 @@ nav {
   margin-left: 5%;
 }
 
-.kfeature-text {
+.kfeature-text,
+.ktest-left {
   width: 40%;
   position: relative;
 }
@@ -102,4 +109,51 @@ nav {
   right: 100px;
   font: 200px Galano Grotesque DEMO;
   color: #00000015;
+}
+
+.ktest-left {
+  margin-left: 10%;
+}
+
+.ktests {
+  margin-top: 200px;
+}
+
+.ktest {
+  padding: 50px 0;
+}
+
+.ktest-btns {
+  position: absolute;
+  right: 0;
+  vertical-align: middle;
+}
+
+.ktest-btns button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 35px;
+  padding: 0 10px;
+}
+
+.color-brand-light {
+  color: var(--brand-light);
+}
+
+.color-brand-dark {
+  color: var(--brand-dark);
+}
+
+.bg-brand-light {
+  background-color: var(--brand-light);
+}
+
+.bg-brand-dark {
+  background-color: var(--brand-dark);
+}
+
+.ktest-text-ghost {
+  top: -50px;
+  right: 150px;
 }
