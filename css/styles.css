@@ -8,12 +8,12 @@
 
 @font-face {
   font-family: Work Sans;
-  src: url(fonts/workR.ttf);
+  src: url(../fonts/workR.ttf);
 }
 
 @font-face {
   font-family: Galano Grotesque DEMO;
-  src: url(fonts/galano.otf);
+  src: url(../fonts/galano.otf);
 }
 
 body {
