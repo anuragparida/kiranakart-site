@@ -19,6 +19,9 @@
     <!-- Main Css -->
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="css/green.css" rel="stylesheet" />
+    <!-- AOS & Animate-->
+    <link href="css/aos.css" rel="stylesheet" />
+    <!--Manual Styles-->
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
@@ -45,35 +48,41 @@
     <section class="bg-half-170 d-table w-100 overflow-hidden" id="home">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-lg-7 col-md-7" style="margin-top: -150px">
+          <div
+            class="col-lg-7 col-md-7"
+            style="margin-top: -150px"
+            data-aos="zoom-in-right"
+          >
             <div class="title-heading mt-4">
-              <h1 class="heading mb-3">We are KiranaKart</h1>
+              <h1 class="heading mb-3">We are KiranaKart 🛒🛍️</h1>
               <p class="para-desc text-muted">
                 Launch your campaign and benefit from our expertise on designing
                 and managing conversion centered bootstrap4 html page.
               </p>
               <div class="watch-video mt-4 pt-2">
-                <a href="javascript:void(0)" class="btn btn-primary mb-2 mr-2"
+                <!--<a href="javascript:void(0)" class="btn btn-primary mb-2 mr-2"
                   >Install Now</a
                 >
                 <a
                   href="https://www.youtube.com/watch?v=jNTZpfXYJa4"
                   class="video-play-icon watch title-dark text-dark mb-2"
                 >
-                  <!-- <i
-                    class="mdi mdi-play play-icon-circle  play play-iconbar"
-                  ></i> -->
                   <i
                     class="fas fa-play text-center d-inline-block mr-1 rounded-circle text-white title-dark position-relative play play-iconbar play-icon-circle"
                   ></i>
                   WATCH VIDEO</a
-                >
+                >-->
+                <a href="#"><img src="images/google-play-badge.png" /></a>
+                <a href="#"><img src="images/app-store-badge.png" /></a>
               </div>
             </div>
           </div>
           <!--end col-->
 
-          <div class="col-lg-5 col-md-5 mt-4 pt-2 mt-sm-0 pt-sm-0">
+          <div
+            class="col-lg-5 col-md-5 mt-4 pt-2 mt-sm-0 pt-sm-0"
+            data-aos="zoom-in"
+          >
             <div class="classic-app-image position-relative">
               <div class="bg-app-shape position-relative">
                 <img
@@ -172,12 +181,12 @@
           </div>
 
           <div class="container row align-items-center kfeature">
-            <div class="kfeature-left kfeature-image">
+            <div class="kfeature-left kfeature-image" data-aos="fade-down">
               <img src="images/kgraphics/sampleGraphic2x2.png" />
             </div>
-            <div class="kfeature-right kfeature-text">
+            <div class="kfeature-right kfeature-text" data-aos="fade-left">
               <span class="kfeature-text-ghost">1</span>
-              <h2 class="heading mb-3">The Most Extensive Catalogue</h2>
+              <h2 class="heading mb-3">📚 The Most Extensive Catalogue</h2>
               <p class="para-desc text-muted">
                 We spent months curating our inventory so that whatever you
                 need, we can get it to you without a sweat.
@@ -186,28 +195,30 @@
           </div>
 
           <div class="container row align-items-center kfeature">
-            <div class="kfeature-left kfeature-text">
+            <div class="kfeature-left kfeature-text" data-aos="fade-right">
               <span class="kfeature-text-ghost">2</span>
               <h2 class="heading mb-3">
-                Well this is another strategic feature
+                💡 Well this is another strategic feature
               </h2>
               <p class="para-desc text-muted">
                 Yes, we would like you to download our app and give us your
                 money, thank you so much.
               </p>
             </div>
-            <div class="kfeature-right kfeature-image">
+            <div class="kfeature-right kfeature-image" data-aos="fade-down">
               <img src="images/kgraphics/sampleGraphic1x3.png" />
             </div>
           </div>
 
           <div class="container row align-items-center kfeature">
-            <div class="kfeature-left kfeature-image">
+            <div class="kfeature-left kfeature-image" data-aos="fade-down">
               <img src="images/kgraphics/sampleGraphic2x2.png" />
             </div>
-            <div class="kfeature-right kfeature-text">
+            <div class="kfeature-right kfeature-text" data-aos="fade-left">
               <span class="kfeature-text-ghost">3</span>
-              <h2 class="heading mb-3">We will deliver though. We Promise.</h2>
+              <h2 class="heading mb-3">
+                🚚 We will deliver though. We Promise.
+              </h2>
               <p class="para-desc text-muted">
                 Yes we are a startup but bro come on, Facebook was once a
                 startup too.
@@ -216,17 +227,17 @@
           </div>
 
           <div class="container row align-items-center kfeature">
-            <div class="kfeature-left kfeature-text">
+            <div class="kfeature-left kfeature-text" data-aos="fade-right">
               <span class="kfeature-text-ghost">4</span>
               <h2 class="heading mb-3">
-                Hindi coming soon. Change content thanks.
+                🈹 Hindi coming soon. Change content thanks.
               </h2>
               <p class="para-desc text-muted">
                 Yep yep. Cool cool cool. Yep yep. Cool cool cool. Yep yep. Cool
                 cool cool. Yep yep. Cool cool cool.
               </p>
             </div>
-            <div class="kfeature-right kfeature-image">
+            <div class="kfeature-right kfeature-image" data-aos="fade-down">
               <img src="images/kgraphics/sampleGraphic1x3.png" />
             </div>
           </div>
@@ -326,6 +337,11 @@
       src="https://kit.fontawesome.com/ef136c4392.js"
       crossorigin="anonymous"
     ></script>
+    <!--AOS-->
+    <script src="js/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <!-- Main Js -->
     <script src="js/app.js"></script>
     <script src="js/kiranakart.js"></script>
